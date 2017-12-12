@@ -1,0 +1,32 @@
+package com.heavenking.chinabanglaitltd.profileapp;
+
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class Press extends Fragment {
+
+
+    public Press() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_press,container,false);
+
+        pressbackground press = new pressbackground();
+        press.execute();
+        return view;
+    }
+
+}
